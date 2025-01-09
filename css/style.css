@@ -1,0 +1,59 @@
+body {
+    overflow-x: hidden;
+  }
+ 
+  .text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); 
+    color: #fff; 
+  }
+  
+/* Cores customizadas */
+.bg-cyan-200 {
+    background-color: #a5f3fc !important;
+  }
+  
+  .bg-pink-200 {
+    background-color: #fbcfe8 !important;
+  }
+  
+  .bg-orange-200 {
+    background-color: #fed7aa !important;
+  }
+  
+  .bg-indigo-200 {
+    background-color: #c7d2fe !important;
+  }
+  
+  /* Fonte global */
+  body {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 18px;
+  }
+  
+  /* Estilo do rodapé */
+  footer .social-icons a {
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  footer .social-icons a:hover {
+    transform: scale(1.2);
+  }
+  
+  /* Espaçamento entre colunas */
+  .icon-text-spacing {
+    margin-top: 15px;
+  }
+  
+  /* Ajuste do tamanho do mapa */
+  .custom-size {
+    width: 500px;
+    height: 410px;
+    margin-bottom: 15px;
+  }
+  
+  
+  
+  
+
+
