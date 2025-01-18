@@ -52,7 +52,67 @@ body {
     margin-bottom: 15px;
   }
   
+/* Estilização página Reservas*/
+
+.pagina-reserva {
+  margin: 0;
+  padding: 0; 
+  font-family: 'Times New Roman', Times, serif;
+  background-image: url('../img/02.jpg');
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  border-radius: 10px;
+
+}
+
+body.pagina-reserva .container {
+  flex: 1;
+}
+
+body.pagina-reserva footer {
+  margin-top: 350px;
+}
+
+
+
+.pagina-reserva h1 {
+  color: #2222dd;
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(66, 82, 221, 0.8);
+  background-color: rgb(248, 246, 243);
   
+}
+
+.pagina-reserva table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  
+
+}
+
+.pagina-reserva th, 
+.pagina-reserva td {
+  text-align: center;
+  padding: 10px;
+  color: #7f7f82;
+  border: 1px solid #dddddd;
+  text-shadow: 
+  1px 1px 2px rgba(252, 252, 249, 0.934), /* Contorno escuro em volta das letras */
+  -1px -1px 2px rgba(198, 221, 243, 0.5),
+  1px -1px 2px rgba(173, 196, 240, 0.5),
+  -1px 1px 2px rgba(213, 216, 217, 0.5);
+}
+
+
+
+
+
+
   
   
 

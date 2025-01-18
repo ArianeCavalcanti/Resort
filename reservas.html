@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservas - Resort & Hotel Grand Club</title>
+  <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="./css/style.css" rel="stylesheet">
+</head>
+
+<body class="pagina-reserva">
+  <header class="container-fluid p-2 bg-cyan-200 text-center">
+    <h1>Reservas Realizadas</h1>
+  </header>
+
+  <main class="container my-5">
+    <table class="table table-striped table-bordered" id="reservasTable">
+      <thead>
+        <tr>
+          <th></th>
+          <th>Nome</th>
+          <th>Email</th>
+          <th>Data de Entrada</th>
+          <th>Data de Saída</th>
+          <th>Adultos</th>
+          <th>Crianças</th>
+          <th>Observações</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Dados preenchidos dinamicamente -->
+      </tbody>
+    </table>
+  </main>
+
+
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const reservasTable = document.querySelector('#reservasTable tbody');
+
+      fetch('http://localhost:3000/reservas')
+        .then(response => response.json())
+        .then(data => {
+          data.forEach((reserva, index) => {
+            const row = `
+              <tr>
+                <td>${index + 1}</td>
+                <td>${reserva.nome}</td>
+                <td>${reserva.email}</td>
+                <td>${reserva.dataEntrada}</td>
+                <td>${reserva.dataSaida}</td>
+                <td>${reserva.qtdAdultos}</td>
+                <td>${reserva.qtdCriancas || '-'}</td>
+                <td>${reserva.observacoes || '-'}</td>
+              </tr>
+            `;
+            reservasTable.insertAdjacentHTML('beforeend', row);
+          });
+        })
+        .catch(error => console.error('Erro ao carregar reservas:', error));
+    });
+  </script>
+
+
+  <!-- Rodapé -->
+
+  <footer class="container-fluid bg-pink-200 text-center py-4">
+    <p class="mb-4"></p>Siga-nos nas redes sociais:</p>
+    <div class="social-icons d-flex justify-content-center">
+      <a href="#"><img src="./img/youtube.png" alt="YouTube" width="30"></a>
+      <a href="#"><img src="./img/instagram.png" alt="Instagram" width="30"></a>
+      <a href="#"><img src="./img/facebook.png" alt="Facebook" width="30"></a>
+    </div>
+    <p class="mb-4 "></p>&copy; By Ariane Cavalcanti, Inc.</p>
+  </footer>
+
+  <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>

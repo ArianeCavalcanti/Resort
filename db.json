@@ -1,0 +1,64 @@
+{
+  "reservas": [
+    {
+      "id": "1a1f",
+      "nome": "Luan Matias Guerra",
+      "email": "luan@gmail.com",
+      "dataEntrada": "2025-03-11",
+      "dataSaida": "2025-03-13",
+      "qtdAdultos": 2,
+      "qtdCriancas": 1,
+      "observacoes": "Há cama de solteiro e cama de casal?"
+    },
+    {
+      "id": "edcf",
+      "nome": "Ana Paula Arozio",
+      "email": "ana@gmail.com",
+      "dataEntrada": "2025-01-16",
+      "dataSaida": "2025-01-18",
+      "qtdAdultos": 4,
+      "qtdCriancas": 2,
+      "observacoes": "Pode levar pets?"
+    },
+    {
+      "id": "278f",
+      "nome": "Marcos Nogueira Munhoz",
+      "email": "marcos@outlook.com",
+      "dataEntrada": "2025-01-20",
+      "dataSaida": "2025-01-22",
+      "qtdAdultos": 5,
+      "qtdCriancas": 3,
+      "observacoes": "Há espaço kids?"
+    },
+    {
+      "id": "cc64",
+      "nome": "Simone Galvão Peres",
+      "email": "simone@gmail.com",
+      "dataEntrada": "2025-01-20",
+      "dataSaida": "2025-01-24",
+      "qtdAdultos": 2,
+      "qtdCriancas": 0,
+      "observacoes": "O jantar é incluso no pacote?"
+    },
+    {
+      "id": "b812",
+      "nome": "Fernando Nunes Martins",
+      "email": "fernando@outlook.com",
+      "dataEntrada": "2025-01-24",
+      "dataSaida": "2025-01-26",
+      "qtdAdultos": 9,
+      "qtdCriancas": 2,
+      "observacoes": "Qual o horário do check-in?"
+    },
+    {
+      "id": "e486",
+      "nome": "Aurora Assunção Pires",
+      "email": "aurora@gmail.com",
+      "dataEntrada": "2025-01-30",
+      "dataSaida": "2025-02-08",
+      "qtdAdultos": 5,
+      "qtdCriancas": 4,
+      "observacoes": "Há beliches nos quartos ?"
+    }
+  ]
+}
